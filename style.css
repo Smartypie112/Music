@@ -6,7 +6,7 @@
 .grid{
   display: none;
 }
-.home .device-files{
+.home .app-title{
   position: relative;
   top:-1vh;
   color:white;
