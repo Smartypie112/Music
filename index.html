@@ -38,6 +38,9 @@
 
     <div class="content">
       
+<!-- The svg for changing the song looking format in right -->
+
+<!-- one in 1 line -->
   <svg  class="flex" width="14" height="14" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <!-- First Row -->
   <circle cx="10" cy="15" r="8" fill="white" stroke="black" stroke-width="1" />
@@ -51,25 +54,31 @@
   <circle cx="10" cy="85" r="8" fill="white" stroke="black" stroke-width="1" />
   <rect x="25" y="77" rx="8" ry="8" width="65" height="9" fill="white" stroke="black" stroke-width="1" />
 </svg>
+<!-- two in 1 line -->
       <svg class="grid"width="12" height="12" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="45" height="45" fill="white" />
   <rect x="55" y="0" width="45" height="45" fill="white" />
   <rect x="0" y="55" width="45" height="45" fill="white" />
   <rect x="55" y="55" width="45" height="45" fill="white" />
 </svg>
-      <div class="songs">
-        <!-- Repeat this song block as needed -->
-        
+ 
+ <!-- The box which contain all songs in UI-->
 
-        <!-- Add more .song blocks below as needed... -->
-      </div> <!-- end of .songs -->
+      <div class="songs">
+
+      </div>
+
+ <!-- Add songs button -->
       <div class="add-song">
   <div class="plus-button">+</div>
   <span class="add-text">Add Songs</span>
   <input class="song-input" type="file" accept="audio/*" multiple>
 </div>
-    </div> <!-- end of .content -->
-    <button class="suffle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+    
+</div>
+   
+<!-- Suffle button -->
+ <button class="suffle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
   <!-- Smooth top-left to bottom-right path -->
   <path d="M4 4 C8 4, 10 8, 14 12 C16 14, 18 16, 20 16" />
   <!-- Bottom-right arrowhead -->
@@ -80,8 +89,10 @@
   <!-- Top-right arrowhead -->
   <polyline points="17 5, 20 8, 17 11" />
 </svg><span class="suffle-all">Suffle All</span></button>
+
+<!-- Bottom player Bar -->
     <div class="player">
-       <img src="colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg" class="music-img-bg" >
+       <img src="assets/colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg" class="music-img-bg" >
           <div class="text-content-player">
           <div class="scroll-container">
              <span class="song-name-player-bg">Long song name that goes beyond the container</span>
@@ -96,7 +107,10 @@
   <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
 </svg>
     </div>
+
     <div class="down"></div>
+
+<!-- Menu bar of account icon -->
     <div class="others">
       <div class="top-heading">
       <svg id="cross" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -129,9 +143,17 @@
       
       </div>
     
-  </div> <!-- end of .home -->
+  </div>
+
+ <!-- end of .home -->
+
+<!-- Song Player page -->
+
   <div class="player-box">
+
+ <!--Top of the player screen--> 
     <div class="top">
+<!-- Arrow to close this screen -->
     <svg class="down-arrow"width="30" height="30" viewBox="0 0 24 24" fill="none"
      xmlns="http://www.w3.org/2000/svg">
   <path d="M6 9L12 15L18 9"
@@ -140,16 +162,20 @@
         stroke-linecap="round"
         stroke-linejoin="round" />
 </svg>
+<!--Container contain song name-->
     <div class="scroll-container">
              <span class="song-name-player">Long song name that goes beyond the container</span>
           </div>
+<!--3 dots in top right of player screen-->
     <svg  class="dot" style="margin-top:1vh;"width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="5" r="1"/>
             <circle cx="12" cy="9" r="1"/>
             <circle cx="12" cy="13" r="1"/>
           </svg>
       </div>
- <img src="colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg" class="music-img" >
+<!--Image of song-->
+ <img src="assets/colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215." class="music-img" >
+<!--Controllers of song-->
     <input id="seek-bar" type="range">
     <div class="controls">
   <svg id="prev"class="skip"width="38" style="transform:rotate(180deg);"height="38" viewBox="0 0 48 48" fill="none"
@@ -174,6 +200,8 @@
   <path class="arrow2" d="M24 12L38 24L24 36V12Z" fill="white"/>
 </svg>
     </div>
+
+<!--Lyrics box at the bottom-->
     <div class="lyrics-box">
       <svg width="30" height="30" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
   <!-- Base: Music Note -->
@@ -189,6 +217,8 @@
       </div>
     </div>
   </div>
+
+<!-- 3dots options box -->
   <div id="options"class="song-options">
     <div class="delete no-border"><svg class="delete-icon no-border" width="38" height="38" viewBox="0 0 48 48" fill="none"
   xmlns="http://www.w3.org/2000/svg">
